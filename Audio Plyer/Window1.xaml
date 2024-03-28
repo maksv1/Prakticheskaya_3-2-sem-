@@ -1,0 +1,19 @@
+﻿<Window x:Class="Audio_Plyer.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Audio_Plyer"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid Background="#FF332C2C">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="241*"/>
+            <RowDefinition Height="193*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="HistoryListBox" SelectionChanged="HistoryListBox_SelectionChanged" />
+        <Button Content="Close" Click="Close_Click" Margin="0,161,0,0" Grid.Row="1" />
+        <TextBlock Height="Auto" HorizontalAlignment="Left" FontSize="20" Margin="294,0,0,181" Width="239" ><Run Language="ru-ru" Text="История прослушиваний"/><LineBreak/><Run Language="ru-ru"/><LineBreak/><Run Language="ru-ru"/></TextBlock>
+
+    </Grid>
+</Window>
